@@ -62,3 +62,21 @@
   }
 }
 
+/* ---- Smooth image reveal (see components/Img.tsx) ---- */
+.img-pending {
+  filter: blur(14px);
+}
+
+@keyframes img-unblur {
+  from { filter: blur(14px); }
+  to   { filter: blur(0); }
+}
+
+.img-reveal {
+  animation: img-unblur 0.7s cubic-bezier(0.22, 0.7, 0.2, 1) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .img-pending { filter: none; }
+  .img-reveal  { animation: none !important; }
+}

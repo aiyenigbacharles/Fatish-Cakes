@@ -1,6 +1,7 @@
 import React from 'react';
 import { Instagram, MessageCircle, ExternalLink, MapPin, Clock, Phone, Heart } from 'lucide-react';
 import { siteConfig } from '../data/site.ts';
+import { Img } from './Img.tsx';
 
 interface FooterProps {
   onNavigate: (view: string) => void;
@@ -65,11 +66,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   : 'rounded-tr-2xl rounded-bl-2xl rounded-tl-md rounded-br-md'
               }`}
             >
-              <img
+              <Img
                 src={item.img}
+                sizes="(min-width: 640px) 16vw, 33vw"
                 alt={item.alt}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                loading="lazy"
               />
             </div>
           ))}
@@ -85,7 +86,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-white p-1 shadow-sm flex items-center justify-center">
                   <img
-                    src="/brand/logo.png"
+                    src="/brand/logo-160.webp"
                     alt="Fatish Cakes Golden Chef Hat Logo"
                     className="w-full h-full object-contain"
                   />

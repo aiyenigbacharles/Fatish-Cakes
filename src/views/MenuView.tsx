@@ -3,6 +3,7 @@ import { Search, Sparkles, Filter, Clock, ArrowRight } from 'lucide-react';
 import { getAllProducts } from '../lib/content.ts';
 import { Product, ProductCategory } from '../data/products.ts';
 import { formatNaira } from '../lib/whatsapp.ts';
+import { Img } from '../components/Img.tsx';
 
 interface MenuViewProps {
   onSelectProduct: (product: Product) => void;
@@ -123,11 +124,11 @@ export const MenuView: React.FC<MenuViewProps> = ({ onSelectProduct, onNavigateT
                 }`}
                 onClick={() => onSelectProduct(product)}
               >
-                <img
+                <Img
                   src={product.image}
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
                 />
 
                 {product.badge && (

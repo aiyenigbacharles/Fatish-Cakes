@@ -3,6 +3,7 @@ import { X, Check, Plus, Minus, Sparkles, Clock, MessageSquare } from 'lucide-re
 import { Product } from '../data/products.ts';
 import { addToCart } from '../lib/cart.ts';
 import { formatNaira } from '../lib/whatsapp.ts';
+import { Img } from './Img.tsx';
 
 interface ProductModalProps {
   product: Product | null;
@@ -126,8 +127,10 @@ export const ProductModal: React.FC<ProductModalProps> = ({
           {/* Product Header / Hero Split */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-start">
             <div className="relative aspect-4/3 sm:aspect-square rounded-tl-2xl rounded-br-2xl rounded-tr-md rounded-bl-md overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12] shadow-md border border-[#2B1A12]/10 dark:border-white/10">
-              <img
+              <Img
                 src={product.image}
+                sizes="(min-width: 640px) 420px, 92vw"
+                priority
                 alt={product.name}
                 className="w-full h-full object-cover"
               />

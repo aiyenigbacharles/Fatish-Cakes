@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Trash2, Plus, Minus, ArrowRight, ShoppingBag, ShieldCheck } from 'lucide-react';
 import { CartItem, updateCartQuantity, removeFromCart, getCartSummary, clearCart } from '../lib/cart.ts';
 import { formatNaira } from '../lib/whatsapp.ts';
+import { Img } from './Img.tsx';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -86,8 +87,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               items.map((item) => (
                 <div key={item.id} className="pt-4 first:pt-0 flex gap-3.5">
                   <div className="w-20 h-20 rounded-tl-xl rounded-br-xl rounded-tr-sm rounded-bl-sm overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12] shrink-0 border border-[#2B1A12]/10 dark:border-white/10">
-                    <img
+                    <Img
                       src={item.product.image}
+                      sizes="80px"
                       alt={item.product.name}
                       className="w-full h-full object-cover"
                     />

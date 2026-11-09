@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Instagram, ExternalLink } from 'lucide-react';
 import { getAllGalleryItems } from '../lib/content.ts';
 import { siteConfig } from '../data/site.ts';
+import { Img } from '../components/Img.tsx';
 
 export const GalleryView: React.FC = () => {
   const items = getAllGalleryItems();
@@ -79,11 +80,11 @@ export const GalleryView: React.FC = () => {
             className="group relative cursor-pointer bg-white dark:bg-[#1E130B] rounded-2xl overflow-hidden border border-[#2B1A12]/10 dark:border-white/10 shadow-xs hover:shadow-xl transition-all"
           >
             <div className="aspect-4/3 overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12]">
-              <img
+              <Img
                 src={item.image}
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
               />
             </div>
             <div className="p-4 space-y-1">
@@ -152,8 +153,10 @@ export const GalleryView: React.FC = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="max-h-[70vh] bg-black flex items-center justify-center overflow-hidden">
-              <img
+              <Img
                 src={filteredItems[activeLightboxIndex].image}
+                sizes="(min-width: 640px) 640px, 100vw"
+                priority
                 alt={filteredItems[activeLightboxIndex].title}
                 className="max-h-[70vh] w-auto object-contain"
               />

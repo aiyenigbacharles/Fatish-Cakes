@@ -14,7 +14,7 @@ export interface PageMeta {
 }
 
 export const BASE_URL = 'https://fatishcakes.com';
-export const DEFAULT_OG_IMAGE = `${BASE_URL}/assets/aistudio/Elegant_Gold_and_Chocolate_Birthday_Cake_c6c99068.png`;
+export const DEFAULT_OG_IMAGE = `${BASE_URL}/assets/og/Elegant_Gold_and_Chocolate_Birthday_Cake_c6c99068.jpg`;
 
 export const PAGE_META_MAP: Record<string, PageMeta> = {
   home: {
@@ -29,7 +29,7 @@ export const PAGE_META_MAP: Record<string, PageMeta> = {
     title: 'Celebration Cakes, Parfaits & Chops Menu | FATISH CAKES Abuja',
     description: 'Explore the full Fatish Cakes menu in Abuja: Signature birthday cakes, layered cake parfaits, bento boxes, and golden party small chops platters.',
     canonicalPath: '/#/menu',
-    ogImage: `${BASE_URL}/assets/aistudio/Taitshcakes_Dessert_Display_bc772563.png`,
+    ogImage: `${BASE_URL}/assets/og/Taitshcakes_Dessert_Display_bc772563.jpg`,
     h1: 'Our Celebration Menu & Patisserie',
     breadcrumbs: [
       { name: 'Home', path: '#/' },
@@ -40,7 +40,7 @@ export const PAGE_META_MAP: Record<string, PageMeta> = {
     title: 'Custom Cake Orders & Bespoke Inquiries | FATISH CAKES Abuja',
     description: 'Design your dream multi-tier wedding or birthday cake in Abuja. Submit your inspiration photos, guest size, and flavor preferences directly on WhatsApp.',
     canonicalPath: '/#/custom-orders',
-    ogImage: `${BASE_URL}/assets/aistudio/Barbie_Princess_Birthday_Cake_ce2425ee.png`,
+    ogImage: `${BASE_URL}/assets/og/Barbie_Princess_Birthday_Cake_ce2425ee.jpg`,
     h1: 'Bespoke Custom Cake Design & Orders',
     breadcrumbs: [
       { name: 'Home', path: '#/' },
@@ -51,7 +51,7 @@ export const PAGE_META_MAP: Record<string, PageMeta> = {
     title: 'Bakery Photo Gallery | FATISH CAKES Abuja Real Creations',
     description: 'View real photography of custom celebration cakes, bridal shower trays, cake parfait cups, and catering platters handcrafted in our Abuja studio.',
     canonicalPath: '/#/gallery',
-    ogImage: `${BASE_URL}/assets/aistudio/Blue_Ombre_Birthday_Cake_Box_60b9ebcf.png`,
+    ogImage: `${BASE_URL}/assets/og/Blue_Ombre_Birthday_Cake_Box_60b9ebcf.jpg`,
     h1: 'Abuja Bakery Showcase & Gallery',
     breadcrumbs: [
       { name: 'Home', path: '#/' },
@@ -62,7 +62,7 @@ export const PAGE_META_MAP: Record<string, PageMeta> = {
     title: 'About the Head Chef & Bakery Studio | FATISH CAKES Abuja',
     description: 'Meet the Head Pastry Chef behind Fatish Cakes Abuja. Discover our culinary philosophy, pure butter commitment, and passion for memorable celebrations.',
     canonicalPath: '/#/about',
-    ogImage: `${BASE_URL}/assets/aistudio/image_7012cf7f.png`,
+    ogImage: `${BASE_URL}/assets/og/image_7012cf7f.jpg`,
     h1: 'About Fatish Cakes & Our Head Chef',
     breadcrumbs: [
       { name: 'Home', path: '#/' },

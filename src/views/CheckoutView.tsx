@@ -19,6 +19,7 @@ import {
   formatNaira,
   OrderPayload
 } from '../lib/whatsapp.ts';
+import { Img } from '../components/Img.tsx';
 
 interface CheckoutViewProps {
   items: CartItem[];
@@ -510,8 +511,9 @@ export const CheckoutView: React.FC<CheckoutViewProps> = ({ items, onNavigateToM
           <div className="space-y-3 max-h-72 overflow-y-auto divide-y divide-[#2B1A12]/5 dark:divide-white/5 pr-1">
             {items.map((item) => (
               <div key={item.id} className="pt-3 first:pt-0 flex items-start gap-3">
-                <img
+                <Img
                   src={item.product.image}
+                  sizes="56px"
                   alt={item.product.name}
                   className="w-14 h-14 rounded-lg object-cover bg-[#FBE6DF] dark:bg-[#2A1B12] shrink-0"
                 />

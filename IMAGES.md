@@ -33,3 +33,20 @@ This guide explains recommended dimensions, formats, and file naming conventions
    image: "/images/products/my_cake.webp"
    ```
 4. Save and your site updates immediately!
+
+## Automatic image optimization (important)
+
+Photos are **never** served straight from the originals. Put your full-size
+photo in `assets-src/aistudio/` and run:
+
+```bash
+pip install Pillow
+npm run optimize-images
+```
+
+This generates small responsive WebP versions in `public/assets/img/`, social
+share images in `public/assets/og/`, and a blur-preview manifest in
+`src/data/imageManifest.ts`. Then reference the photo in the code as
+`/assets/aistudio/<file-name>.png` (the original name) and use the `<Img>`
+component (`src/components/Img.tsx`) instead of `<img>`. It loads the right size
+for each screen and fades in smoothly.

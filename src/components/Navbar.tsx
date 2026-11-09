@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate, onOpenC
           >
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFF5F2] dark:bg-[#23150D] border border-[#C9A24B]/30 flex items-center justify-center p-1 overflow-hidden shadow-xs group-hover:scale-105 transition-transform">
               <img
-                src="/brand/logo.png"
+                src="/brand/logo-160.webp"
                 alt="Fatish Cakes Chef Hat Logo"
                 className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
@@ -207,7 +207,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate, onOpenC
           <div className="flex items-center justify-between border-b border-[#2B1A12]/10 dark:border-white/10 pb-4">
             <div className="flex items-center gap-2">
               <img
-                src="/brand/logo.png"
+                src="/brand/logo-160.webp"
                 alt="Fatish Cakes Logo"
                 className="w-10 h-10 object-contain"
                 referrerPolicy="no-referrer"

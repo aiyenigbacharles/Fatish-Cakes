@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, Sparkles, ShieldCheck, Instagram } from 'lucide-react';
 import { siteConfig } from '../data/site.ts';
+import { Img } from '../components/Img.tsx';
 
 export const AboutView: React.FC = () => {
   return (
@@ -10,15 +11,17 @@ export const AboutView: React.FC = () => {
         {/* Left Column: Asymmetric Photo Frame */}
         <div className="lg:col-span-5 relative">
           <div className="aspect-square sm:aspect-4/5 rounded-tl-[3.5rem] rounded-br-[3.5rem] rounded-tr-2xl rounded-bl-2xl overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12] border-2 border-[#C9A24B]/30 shadow-2xl">
-            <img
+            <Img
               src="/assets/aistudio/image_7012cf7f.png"
+              sizes="(min-width: 1024px) 40vw, 92vw"
+              priority
               alt="Head Pastry Chef and Founder of Fatish Cakes Abuja in official chef uniform"
               className="w-full h-full object-cover object-top"
             />
             {/* Scrim with Chef Badge */}
             <div className="absolute bottom-4 left-4 right-4 bg-white/95 dark:bg-[#1C120B]/95 backdrop-blur-md p-3.5 rounded-xl border border-[#2B1A12]/10 dark:border-white/10 flex items-center gap-3">
               <img
-                src="/brand/logo.png"
+                src="/brand/logo-160.webp"
                 alt="Fatish Cakes Chef Hat Logo"
                 className="w-10 h-10 object-contain"
               />

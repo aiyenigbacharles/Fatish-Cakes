@@ -16,6 +16,7 @@ import { getFeaturedProducts } from '../lib/content.ts';
 import { Product } from '../data/products.ts';
 import { siteConfig } from '../data/site.ts';
 import { formatNaira } from '../lib/whatsapp.ts';
+import { Img } from '../components/Img.tsx';
 
 interface HomeViewProps {
   onNavigate: (view: string) => void;
@@ -148,8 +149,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
 
             {/* Main Asymmetric Hero Image Frame (Real Fatish Cakes Product) */}
             <div className="relative w-full max-w-md aspect-4/5 rounded-tl-[3rem] rounded-br-[3rem] rounded-tr-2xl rounded-bl-2xl overflow-hidden bg-[#FBE6DF] dark:bg-[#23150D] shadow-2xl border-2 border-[#C9A24B]/30">
-              <img
+              <Img
                 src="/assets/aistudio/Elegant_Gold_and_Chocolate_Birthday_Cake_c6c99068.png"
+                sizes="(min-width: 640px) 448px, 92vw"
+                priority
                 alt="Signature Gold Celebration Cake by Fatish Cakes Abuja"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -166,7 +169,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
                 </div>
                 <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-xs p-1 flex items-center justify-center">
                   <img
-                    src="/brand/logo.png"
+                    src="/brand/logo-160.webp"
                     alt="Fatish Cakes Golden Chef Hat Logo emblem"
                     className="w-full h-full object-contain"
                   />
@@ -177,8 +180,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
             {/* Overlapping Floating Small Chops / Pastry Card (Real Photo) */}
             <div className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:-right-6 z-20 bg-white/95 dark:bg-[#1F130B]/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-xl border border-[#2B1A12]/10 dark:border-white/10 max-w-[210px] sm:max-w-[230px]">
               <div className="flex items-center gap-3">
-                <img
+                <Img
                   src="/assets/aistudio/Nigerian_Snack_Box_with_Spicy_Wings_f1870ce6.png"
+                  sizes="48px"
+                  priority
                   alt="Fatish Cakes Small Chops with Spicy Wings"
                   className="w-12 h-12 rounded-xl object-cover shrink-0"
                 />
@@ -299,8 +304,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
                     : 'rounded-tr-2xl rounded-bl-2xl'
                 }`}
               >
-                <img
+                <Img
                   src={product.image}
+                  sizes="340px"
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -373,8 +379,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
             className="group cursor-pointer relative bg-white dark:bg-[#1E130B] rounded-tl-[2.5rem] rounded-br-[2.5rem] rounded-tr-xl rounded-bl-xl overflow-hidden border border-[#2B1A12]/10 dark:border-white/10 shadow-sm hover:shadow-2xl transition-all duration-300"
           >
             <div className="aspect-4/3 overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12]">
-              <img
+              <Img
                 src="/assets/aistudio/Elegant__Happy_Birthday_Babe__Cake_3ba433ff.png"
+                sizes="(min-width: 768px) 33vw, 100vw"
                 alt="Celebration Cakes Abuja"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -402,8 +409,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
             className="group cursor-pointer relative bg-white dark:bg-[#1E130B] rounded-tr-[2.5rem] rounded-bl-[2.5rem] rounded-tl-xl rounded-br-xl overflow-hidden border border-[#2B1A12]/10 dark:border-white/10 shadow-sm hover:shadow-2xl transition-all duration-300"
           >
             <div className="aspect-4/3 overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12]">
-              <img
+              <Img
                 src="/assets/aistudio/Taitshcakes_Dessert_Display_bc772563.png"
+                sizes="(min-width: 768px) 33vw, 100vw"
                 alt="Cake Parfait Tubs Abuja"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -431,8 +439,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
             className="group cursor-pointer relative bg-white dark:bg-[#1E130B] rounded-tl-[2.5rem] rounded-br-[2.5rem] rounded-tr-xl rounded-bl-xl overflow-hidden border border-[#2B1A12]/10 dark:border-white/10 shadow-sm hover:shadow-2xl transition-all duration-300"
           >
             <div className="aspect-4/3 overflow-hidden bg-[#FBE6DF] dark:bg-[#2A1B12]">
-              <img
+              <Img
                 src="/assets/aistudio/Golden_Nigerian_Party_Snacks_Box_4cc2a06e.png"
+                sizes="(min-width: 768px) 33vw, 100vw"
                 alt="Small Chops Platters Abuja"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -478,8 +487,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
                 className="bg-white dark:bg-[#25170F] rounded-2xl overflow-hidden shadow-xs border border-[#2B1A12]/10 dark:border-white/10 flex flex-col group hover:-translate-y-1 transition-all"
               >
                 <div className="aspect-4/3 overflow-hidden bg-[#FBE6DF] dark:bg-[#2E1C12]">
-                  <img
+                  <Img
                     src={occ.img}
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                     alt={occ.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -632,7 +642,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onSelectProduct 
           {/* Decorative Background Glow and Chef Hat Silhouette */}
           <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-15 pointer-events-none hidden md:flex items-center justify-center">
             <img
-              src="/brand/logo.png"
+              src="/brand/logo-480.webp"
               alt="Fatish Cakes Chef Hat Emblem Silhouette"
               className="w-80 h-80 object-contain filter invert"
             />
