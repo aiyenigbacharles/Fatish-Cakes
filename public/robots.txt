@@ -1,0 +1,12 @@
+# Robots.txt for FATISH CAKES (https://fatishcakes.com)
+# Luxury celebration cakes, dessert parfaits, and small chops in Abuja, Nigeria
+
+User-agent: *
+Allow: /
+Disallow: /checkout
+
+# Sitemap location
+Sitemap: https://fatishcakes.com/sitemap.xml
+
+# LLM & AI agent reference
+# See https://fatishcakes.com/llms.txt for structured machine-readable knowledge

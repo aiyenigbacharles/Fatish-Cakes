@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --orange-600: #DC5A06;
+    --orange-700: #B84A04;
+    --blush-50:   #FFF5F2;
+    --blush-100:  #FBE6DF;
+    --rose-200:   #F4CFC6;
+    --cream-50:   #FFFBF8;
+    --gold-500:   #C9A24B;
+    --cocoa-900:  #2B1A12;
+    --cocoa-600:  #6B4A3A;
+    --white:      #FFFFFF;
+  }
+
+  .dark {
+    --cream-50:   #150D08;
+    --cocoa-900:  #FFF5F2;
+    --cocoa-600:  #D4B9AC;
+    --blush-50:   #23150D;
+    --blush-100:  #2E1C12;
+    --white:      #1F130B;
+  }
+
+  body {
+    font-family: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--cream-50);
+    color: var(--cocoa-900);
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 22s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow {
+    animation: none !important;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://fatishcakes.com/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://fatishcakes.com/assets/aistudio/Elegant_Gold_and_Chocolate_Birthday_Cake_c6c99068.png</image:loc>
+      <image:title>FATISH CAKES - Royal Gold and Chocolate Drip Celebration Cake</image:title>
+      <image:caption>Signature celebration cake handcrafted in Abuja, Nigeria</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Menu -->
+  <url>
+    <loc>https://fatishcakes.com/#/menu</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://fatishcakes.com/assets/aistudio/Taitshcakes_Dessert_Display_bc772563.png</image:loc>
+      <image:title>FATISH CAKES - Homemade Goodness Parfait Tubs</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://fatishcakes.com/assets/aistudio/Golden_Nigerian_Party_Snacks_Box_4cc2a06e.png</image:loc>
+      <image:title>FATISH CAKES - Abuja Small Chops Party Box</image:title>
+    </image:image>
+  </url>
+
+  <!-- Custom Orders -->
+  <url>
+    <loc>https://fatishcakes.com/#/custom-orders</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Photo Gallery -->
+  <url>
+    <loc>https://fatishcakes.com/#/gallery</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://fatishcakes.com/#/about</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://fatishcakes.com/assets/aistudio/image_7012cf7f.png</image:loc>
+      <image:title>FATISH CAKES Head Pastry Chef &amp; Founder</image:title>
+    </image:image>
+  </url>
+
+  <!-- Delivery Policy & Guidelines -->
+  <url>
+    <loc>https://fatishcakes.com/#/delivery-policy</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQs -->
+  <url>
+    <loc>https://fatishcakes.com/#/faq</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://fatishcakes.com/#/contact</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
